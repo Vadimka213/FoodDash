@@ -24,6 +24,7 @@
 
 <body class="bg-gray-50 font-sans text-gray-900">
 
+  <!-- Navbar -->
   <nav class="bg-white border-b sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-6">
 
@@ -33,35 +34,27 @@
 
       <div class="hidden md:flex items-center gap-2 bg-gray-100 rounded-full px-4 py-2 flex-1 max-w-sm">
         <span>🔍</span>
-        <input
-          type="text"
-          placeholder="Знайти ресторан..."
-          class="bg-transparent outline-none w-full text-sm"
-        >
+        <input type="text" placeholder="Знайти ресторан..." class="bg-transparent outline-none w-full text-sm">
       </div>
 
       <div class="flex items-center gap-3 shrink-0">
-        <button class="hidden md:block text-sm">
-          📍 Київ
-        </button>
+        <button class="hidden md:block text-sm">📍 Київ</button>
 
         <button class="relative bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-bold">
           🛒 Кошик
-          <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-            3
-          </span>
+          <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
         </button>
       </div>
 
     </div>
   </nav>
 
+  <!-- Hero -->
   <section class="bg-gradient-to-br from-orange-500 via-orange-400 to-yellow-400 text-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
 
       <div class="flex-1">
-
-        <div class="inline-block bg-white bg-opacity-20 rounded-full px-3 py-2 text-sm font-bold mb-5">
+        <div class="inline-block bg-white/20 rounded-full px-3 py-2 text-sm font-bold mb-5">
           🔥 Топ доставка Києва
         </div>
 
@@ -75,11 +68,11 @@
         </p>
 
         <div class="flex flex-col sm:flex-row gap-3">
-          <button class="bg-white text-orange-500 px-6 py-3 rounded-full font-bold hover:bg-orange-100">
+          <button class="bg-white text-orange-500 px-6 py-3 rounded-full font-bold hover:bg-orange-100 active:scale-95 transition-all">
             🛍️ Замовити зараз
           </button>
 
-          <button class="border border-white px-6 py-3 rounded-full hover:bg-white hover:bg-opacity-20">
+          <button class="border border-white px-6 py-3 rounded-full hover:bg-white/20 active:scale-95 transition-all">
             📍 Вибрати адресу
           </button>
         </div>
@@ -90,23 +83,21 @@
             <p class="text-sm text-orange-100">ресторанів</p>
           </div>
 
-          <div class="border-l border-white border-opacity-30 pl-6">
+          <div class="border-l border-white/30 pl-6">
             <p class="text-2xl font-bold">30 хв</p>
             <p class="text-sm text-orange-100">доставка</p>
           </div>
 
-          <div class="border-l border-white border-opacity-30 pl-6">
+          <div class="border-l border-white/30 pl-6">
             <p class="text-2xl font-bold">4.9★</p>
             <p class="text-sm text-orange-100">рейтинг</p>
           </div>
         </div>
-
       </div>
 
       <div class="flex-1 flex justify-center py-4">
         <div class="relative">
-
-          <div class="w-64 h-64 md:w-72 md:h-72 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+          <div class="w-64 h-64 md:w-72 md:h-72 bg-white/20 rounded-full flex items-center justify-center">
             <span class="text-8xl">🍔</span>
           </div>
 
@@ -121,13 +112,13 @@
             <p class="text-sm font-bold text-gray-700">Рамен</p>
             <p class="text-xs text-orange-500">35 хв</p>
           </div>
-
         </div>
       </div>
 
     </div>
   </section>
 
+  <!-- Categories -->
   <section class="bg-white py-6 border-b">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex gap-3 overflow-x-auto pb-2">
@@ -176,36 +167,26 @@
     </div>
   </section>
 
+  <!-- Restaurants -->
   <section class="py-12">
     <div class="max-w-7xl mx-auto px-6">
 
       <div class="flex items-center justify-between mb-8">
         <div>
           <h2 class="text-2xl font-bold">🔥 Популярні ресторани</h2>
-          <p class="text-gray-500 text-sm mt-1">
-            Найкращі ресторани цього тижня
-          </p>
+          <p class="text-gray-500 text-sm mt-1">Найкращі ресторани цього тижня</p>
         </div>
 
-        <a href="#" class="text-orange-500 text-sm font-semibold">
-          Всі →
-        </a>
+        <a href="#" class="text-orange-500 text-sm font-semibold">Всі →</a>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
         <article class="group bg-white rounded-2xl border overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all cursor-pointer">
-
           <div class="relative h-40 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center overflow-hidden">
             <span class="text-6xl group-hover:scale-110 transition-transform duration-300">🍔</span>
-
-            <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-              Топ
-            </span>
-
-            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">
-              25–35 хв
-            </span>
+            <span class="absolute top-3 left-3 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">Топ</span>
+            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">25–35 хв</span>
           </div>
 
           <div class="p-4">
@@ -213,28 +194,19 @@
               <h3 class="font-bold">Burger Brothers</h3>
               <span class="text-orange-500 text-sm font-bold">4.8★</span>
             </div>
-
             <p class="text-sm text-gray-500 mt-1 mb-3">Американська • Фастфуд</p>
-
             <div class="flex justify-between text-xs">
-              <span>Від 150₴</span>
+              <span>Від 150 ₴</span>
               <span class="text-green-600">Безкоштовно</span>
             </div>
           </div>
         </article>
 
         <article class="group bg-white rounded-2xl border overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all cursor-pointer">
-
           <div class="relative h-40 bg-gradient-to-br from-red-400 to-rose-600 flex items-center justify-center overflow-hidden">
             <span class="text-6xl group-hover:scale-110 transition-transform duration-300">🍕</span>
-
-            <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-              Популярне
-            </span>
-
-            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">
-              30–40 хв
-            </span>
+            <span class="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">Популярне</span>
+            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">30–40 хв</span>
           </div>
 
           <div class="p-4">
@@ -242,28 +214,19 @@
               <h3 class="font-bold">Pizza Roma</h3>
               <span class="text-orange-500 text-sm font-bold">4.7★</span>
             </div>
-
             <p class="text-sm text-gray-500 mt-1 mb-3">Італійська • Піца</p>
-
             <div class="flex justify-between text-xs">
-              <span>Від 180₴</span>
+              <span>Від 180 ₴</span>
               <span class="text-green-600">Безкоштовно</span>
             </div>
           </div>
         </article>
 
         <article class="group bg-white rounded-2xl border overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all cursor-pointer">
-
           <div class="relative h-40 bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center overflow-hidden">
             <span class="text-6xl group-hover:scale-110 transition-transform duration-300">🍣</span>
-
-            <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-              Нові
-            </span>
-
-            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">
-              35–45 хв
-            </span>
+            <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">Нові</span>
+            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">35–45 хв</span>
           </div>
 
           <div class="p-4">
@@ -271,24 +234,18 @@
               <h3 class="font-bold">Tokyo Sushi</h3>
               <span class="text-orange-500 text-sm font-bold">4.9★</span>
             </div>
-
             <p class="text-sm text-gray-500 mt-1 mb-3">Японська • Суші</p>
-
             <div class="flex justify-between text-xs">
-              <span>Від 200₴</span>
+              <span>Від 200 ₴</span>
               <span class="text-green-600">Безкоштовно</span>
             </div>
           </div>
         </article>
 
         <article class="group bg-white rounded-2xl border overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all cursor-pointer">
-
           <div class="relative h-40 bg-gradient-to-br from-purple-400 to-violet-600 flex items-center justify-center overflow-hidden">
             <span class="text-6xl group-hover:scale-110 transition-transform duration-300">🍜</span>
-
-            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">
-              20–30 хв
-            </span>
+            <span class="absolute top-3 right-3 bg-white text-xs px-2 py-1 rounded-full">20–30 хв</span>
           </div>
 
           <div class="p-4">
@@ -296,11 +253,9 @@
               <h3 class="font-bold">Noodle House</h3>
               <span class="text-orange-500 text-sm font-bold">4.6★</span>
             </div>
-
             <p class="text-sm text-gray-500 mt-1 mb-3">Азійська • Локшина</p>
-
             <div class="flex justify-between text-xs">
-              <span>Від 130₴</span>
+              <span>Від 130 ₴</span>
               <span class="text-green-600">Безкоштовно</span>
             </div>
           </div>
@@ -310,16 +265,147 @@
     </div>
   </section>
 
-  <footer class="bg-white border-t py-6">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <p class="text-xl font-bold text-orange-500">🍔 FoodDash</p>
-      <p class="text-sm text-gray-500 mt-2">
-        Смачна їжа з доставкою до твого дому.
-      </p>
-      <p class="text-xs text-gray-400 mt-4">© 2026 FoodDash</p>
+  <!-- Sushi promo banner -->
+  <section class="py-10 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="relative overflow-hidden bg-gradient-to-r from-violet-600 to-purple-500 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <div class="absolute right-0 top-0 text-9xl leading-none opacity-10 pointer-events-none select-none">🍣</div>
+
+        <div class="text-white relative z-10">
+          <span class="text-xs font-bold bg-white/20 px-3 py-1 rounded-full">
+            ⏰ Тільки сьогодні
+          </span>
+
+          <h2 class="text-3xl md:text-4xl font-black mt-3 mb-2">
+            Знижка 15% на суші
+          </h2>
+
+          <p class="text-orange-100 text-sm">
+            Використай промокод і заощаджуй
+          </p>
+        </div>
+
+        <div class="text-center relative z-10 shrink-0">
+          <div class="bg-white rounded-2xl px-8 py-4 mb-4 shadow-lg">
+            <p class="text-xs text-gray-400 mb-1">Промокод</p>
+            <p class="text-2xl font-black text-violet-600 tracking-widest">SUSHI15</p>
+          </div>
+
+          <button class="bg-white text-violet-600 hover:bg-violet-50 active:scale-95 font-bold px-8 py-3 rounded-full transition-all">
+            Активувати
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular dishes -->
+  <section class="py-10">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <h2 class="text-2xl font-bold mb-6">🍽️ Популярні страви</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <article class="bg-white rounded-2xl border border-gray-100 hover:shadow-md transition-shadow flex gap-4 p-4">
+          <div class="w-24 h-24 shrink-0 bg-gradient-to-br from-orange-100 to-orange-200 rounded-xl flex items-center justify-center text-4xl">
+            🍔
+          </div>
+
+          <div class="flex-1 min-w-0 flex flex-col">
+            <h4 class="font-bold text-gray-900 truncate mb-0.5">Класичний бургер з беконом</h4>
+            <p class="text-xs text-gray-500 mb-2">Burger Brothers · 4.8★</p>
+
+            <div class="mt-auto flex items-center justify-between gap-2">
+              <p class="font-black text-orange-500 text-lg">189 ₴</p>
+              <button class="bg-orange-500 hover:bg-orange-600 active:scale-95 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-all">+ Додати</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl border border-gray-100 hover:shadow-md transition-shadow flex gap-4 p-4">
+          <div class="w-24 h-24 shrink-0 bg-gradient-to-br from-red-100 to-rose-200 rounded-xl flex items-center justify-center text-4xl">
+            🍕
+          </div>
+
+          <div class="flex-1 min-w-0 flex flex-col">
+            <h4 class="font-bold text-gray-900 truncate mb-0.5">Піца Маргарита 32 см</h4>
+            <p class="text-xs text-gray-500 mb-2">Pizza Roma · 4.7★</p>
+
+            <div class="mt-auto flex items-center justify-between gap-2">
+              <p class="font-black text-red-500 text-lg">245 ₴</p>
+              <button class="bg-red-500 hover:bg-red-600 active:scale-95 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-all">+ Додати</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-2xl border border-gray-100 hover:shadow-md transition-shadow flex gap-4 p-4">
+          <div class="w-24 h-24 shrink-0 bg-gradient-to-br from-green-100 to-teal-200 rounded-xl flex items-center justify-center text-4xl">
+            🍣
+          </div>
+
+          <div class="flex-1 min-w-0 flex flex-col">
+            <h4 class="font-bold text-gray-900 truncate mb-0.5">Суші-сет Філадельфія</h4>
+            <p class="text-xs text-gray-500 mb-2">Tokyo Sushi · 4.9★</p>
+
+            <div class="mt-auto flex items-center justify-between gap-2">
+              <p class="font-black text-green-600 text-lg">329 ₴</p>
+              <button class="bg-green-600 hover:bg-green-700 active:scale-95 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition-all">+ Додати</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+
+        <div>
+          <div class="text-xl font-black text-orange-400 mb-3">🍔 FoodDash</div>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Смачна їжа з доставкою до твого дому.
+          </p>
+        </div>
+
+        <div>
+          <h6 class="font-bold text-xs uppercase tracking-wider text-gray-500 mb-4">Компанія</h6>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Про нас</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Кар'єра</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white text-sm transition-colors">Блог</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="font-bold text-xs uppercase tracking-wider text-gray-500 mb-4">Контакти</h6>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>📧 hello@fooddash.ua</li>
+            <li>📱 0800 123 456</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p class="text-sm text-gray-500">© 2026 FoodDash. Всі права захищені.</p>
+
+        <div class="flex gap-4 text-xs text-gray-600">
+          <a href="#" class="hover:text-gray-400 transition-colors">Умови</a>
+          <a href="#" class="hover:text-gray-400 transition-colors">Конфіденційність</a>
+        </div>
+      </div>
+
     </div>
   </footer>
 
+  <!-- Category buttons -->
   <script>
     const buttons = document.querySelectorAll('.category-btn');
 
